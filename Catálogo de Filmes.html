@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/Untitled-1.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    
+<link rel="stylesheet" href="./Catálogo de Filmes_files/styles.css"></head>
+<body>
+    <header>
+        <h1>Catálogo de Filmes</h1>
+        <p>Confira nossa coleção de filmes disponíveis para locação.</p>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Ano</th>
+                    <th>Tipo</th>
+                    <th>Classificação</th>
+                    <th>Cópias</th>
+                    <th>Unidades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>O Rei Leão</td>
+                    <td>1994</td>
+                    <td>Familiar</td>
+                    <td>Livre</td>
+                    <td>5</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Interestelar</td>
+                    <td>2014</td>
+                    <td>Ficção Científica</td>
+                    <td>Impróprio para menores de 13 anos</td>
+                    <td>3</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>O Poderoso Chefão</td>
+                    <td>1972</td>
+                    <td>Drama</td>
+                    <td>Proibido para menores de 17 anos</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Toy Story</td>
+                    <td>1995</td>
+                    <td>Familiar</td>
+                    <td>Livre</td>
+                    <td>4</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>O Exorcista</td>
+                    <td>1973</td>
+                    <td>Horror</td>
+                    <td>Proibido para menores de 17 anos</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Matrix</td>
+                    <td>1999</td>
+                    <td>Ficção Científica</td>
+                    <td>Impróprio para menores de 13 anos</td>
+                    <td>3</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Cidade de Deus</td>
+                    <td>2002</td>
+                    <td>Drama</td>
+                    <td>Restrito: menores de 17 anos acompanhados</td>
+                    <td>2</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Django Livre</td>
+                    <td>2012</td>
+                    <td>Faroeste</td>
+                    <td>Proibido para menores de 17 anos</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>As Branquelas</td>
+                    <td>2004</td>
+                    <td>Comédia</td>
+                    <td>Sugestão para orientação dos pais</td>
+                    <td>4</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>O Iluminado</td>
+                    <td>1980</td>
+                    <td>Horror</td>
+                    <td>Proibido para menores de 17 anos</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>© 2023 Vídeo Locadora. Todos os direitos reservados.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
